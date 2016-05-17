@@ -47,4 +47,5 @@ end
 
 gem 'devise'
 gem 'dotenv-rails'
+gem 'rubocop', require: false
 
