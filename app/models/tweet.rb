@@ -5,8 +5,6 @@ class Tweet < ActiveRecord::Base
   end
 
   def bad_method
-    if id
-      return 'this is a bad method'
-    end
+    'this is a bad method' if id
   end
 end
