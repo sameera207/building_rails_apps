@@ -7,4 +7,13 @@ class User < ActiveRecord::Base
   def admin?
     !admin.nil?
   end
+
+  def get_all_admins
+    admins = []
+    User.all.each do |user|
+      admins << user
+    end
+    admins
+  end
+
 end
